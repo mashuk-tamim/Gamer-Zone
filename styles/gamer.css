@@ -5,11 +5,13 @@
     padding: 0;
     font-family: 'Work Sans', sans-serif;
 }
+
 :root {
     --gradient: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     --primary-color: #FF42A5;
     --secondary-color: #4EC5F7;
 }
+
 /* body {
     width: 90vw;
     margin: auto;
@@ -18,7 +20,8 @@
 .primary-color {
     color: var(--primary-color);
 }
-.btn-primary{
+
+.btn-primary {
     background-color: var(--primary-color);
     padding: 20px 40px;
     border: none;
@@ -27,7 +30,8 @@
     font-size: 1rem;
     font-weight: 600;
 }
-.btn-secondary{
+
+.btn-secondary {
     background-color: var(--secondary-color);
     padding: 20px 40px;
     border: none;
@@ -88,19 +92,21 @@
 
 /* banner section styles */
 .banner-container {
-    /* border: 2px solid; */
+    /* height: 550px; */
+    border: 2px solid;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(211, 211, 211, 0.068);
-    background-image: url('../images/Group 141.png');
-    /* background-size: cover; */
-    background-repeat: no-repeat;
+
 }
-.banner-content{
+
+.banner-content {
     margin-left: 5vw;
     width: 50%;
-    height: 100%;
+    background-image: url('../images/Group\ 14.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     /* border: 2px solid tomato; */
 }
 
@@ -119,29 +125,33 @@
     font-weight: 800;
     text-transform: uppercase;
 }
-.banner-content li{
-    list-style:none;
+
+.banner-content li {
+    list-style: none;
     margin: 10px 0px;
-    color: #534C64; 
+    color: #534C64;
 }
-.banner-content i{
+
+.banner-content i {
     color: #FF42A5;
     margin-right: 15px;
     width: 20px;
 }
-.btn-container{
+
+.btn-container {
     display: flex;
     gap: 20px;
     margin: 40px 0px;
 }
-.banner-img{
+
+.banner-img {
     width: 50%;
     margin-right: 5vw;
     /* border: 2px solid tomato; */
 }
-.banner-img img{
+
+.banner-img img {
     width: 100%;
-    
 }
 
 @media screen and (max-width: 426px) {
@@ -159,6 +169,21 @@
         flex-direction: column;
         gap: 30px;
     }
+    .banner-container {
+        /* height: 550px; */
+        border: 2px solid;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .banner-content {
+        margin-left: 0;
+        width: 80%;
+        flex-direction: column-re;
+        /* border: 2px solid tomato; */
+    }
+    .banner-img img {
+        width: 80%;
+    }
 
 }
 
@@ -170,5 +195,20 @@
 
     .nav-logo {
         margin-bottom: 30px;
+    }
+
+    .banner-container {
+        /* height: 550px; */
+        border: 2px solid;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .banner-content {
+        margin-left: 0;
+        width: 100%;
+        background-image: url('../images/Group\ 14.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* border: 2px solid tomato; */
     }
 }
