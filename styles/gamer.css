@@ -59,3 +59,19 @@
 .nav-links img {
     width: 30px;
 }
+
+@media screen and (max-width: 426px) {
+    .nav-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-logo{
+        margin-bottom: 30px;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+}
