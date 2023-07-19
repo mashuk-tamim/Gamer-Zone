@@ -10,6 +10,8 @@
     --gradient: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     --primary-color: #FF42A5;
     --secondary-color: #4EC5F7;
+    --title-color: #0B0223;
+    --text-color: #534C64;
 }
 
 .grad-text {
@@ -32,13 +34,13 @@ button:hover {
 }
 
 .section-title {
-    color: #0B0223;
+    color: var(--title-color);
     font-size: 3rem;
     font-weight: 700;
 }
 
 .section-description {
-    color: #534C64;
+    color: var(--text-color);
     font-size: 1rem;
     font-weight: 400;
     line-height: 30px;
@@ -78,7 +80,7 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #0B0223;
+    color: var(--title-color);
 }
 
 .nav-logo img {
@@ -89,12 +91,12 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 30px;
-    color: #534C64;
+    color: var(--text-color);
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #3C354F;
+    color: var(--text-color);
     text-align: center;
     font-size: 1rem;
     font-weight: 500;
@@ -140,7 +142,7 @@ button:hover {
 }
 
 .banner-content h2 {
-    color: #0B0223;
+    color: var(--title-color);
     font-size: 3rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -155,7 +157,7 @@ button:hover {
 .banner-content li {
     list-style: none;
     margin: 10px 0px;
-    color: #534C64;
+    color: var(--text-color);
 }
 
 .banner-content i {
@@ -223,7 +225,7 @@ button:hover {
 
 .img-text p {
     text-align: center;
-    color: #FF42A5;
+    color: var(--primary-color);
     font-size: 1.5rem;
     font-weight: 600;
     margin: 0;
@@ -282,17 +284,50 @@ button:hover {
 
 }
 
+/* games section starts */
+.game {
+    background-color: #534C64;
+    /* background-color: #2196F3; */
+    /* border: 2px solid rgb(239, 143, 18); */
+}
+
+.game-container {
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    /* gap: 20px; */
+
+}
+
+.game-item {
+    border: 2px solid red;
+    border-radius: 50px;
+    color: var(--title-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+}
+.game-item:nth-child(n+6) {
+    border: 2px solid ;
+  }
+
+
 /* for mobile */
 @media screen and (max-width: 426px) {
+
     /* shared styles */
     .section-title {
         font-size: 2rem;
     }
-    
+
     .section-description {
         font-size: 0.8rem;
         margin: 10px 0px 20px;
     }
+
     /* navbar section */
     .nav-container {
         display: flex;
@@ -386,25 +421,31 @@ button:hover {
         display: flex;
         flex-direction: column;
     }
+
     .feature-content {
         width: 80%;
         text-align: center;
     }
-    .feature-content h2{
+
+    .feature-content h2 {
         width: 70%;
         margin: auto;
     }
+
     .feature-img {
         width: 80%;
 
     }
+
     .feature-img img {
         width: 100%;
     }
+
     .feature-img-inner {
         bottom: 120px;
         left: -40px;
     }
+
     .feature-img-inner img {
         width: 40%;
     }
@@ -476,25 +517,31 @@ button:hover {
         display: flex;
         flex-direction: column;
     }
+
     .feature-content {
         width: 80%;
         text-align: center;
     }
-    .feature-content h2{
+
+    .feature-content h2 {
         width: 70%;
         margin: auto;
     }
+
     .feature-img {
         width: 80%;
 
     }
+
     .feature-img img {
         width: 100%;
     }
+
     .feature-img-inner {
         bottom: 120px;
         left: -40px;
     }
+
     .feature-img-inner img {
         width: 40%;
     }
