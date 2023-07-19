@@ -319,6 +319,25 @@ button:hover {
         font-size: 1rem;
 
     }
+    .videos-container {
+        margin: 10vh 0vw;
+        text-align: center;
+    }
+    .videos-container h2 {
+        font-size: 2rem;
+    }
+    .videos-container p {
+        font-size: 0.8rem;
+        margin: 10px 0px 20px;
+    }
+    
+    .img-container {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        gap: 20px;
+    }
 
 }
 
