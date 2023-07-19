@@ -19,6 +19,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .primary-color {
     color: var(--primary-color);
 }
@@ -286,13 +287,15 @@ button:hover {
     flex-direction: column;
     justify-content: center;
 }
+
 .game-container {
     /* border: 2px solid red; */
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
     gap: 20px;
 }
+
 .game-item {
     border: 2px solid white;
     border-radius: 50px;
@@ -303,16 +306,19 @@ button:hover {
     padding: 10px;
     background-color: white;
 }
-.game-item p{
+
+.game-item p {
     font-size: 1rem;
     font-weight: 600;
 }
-.game-item:hover{
-    border: 2px solid var(--primary-color) ;
+
+.game-item:hover {
+    border: 2px solid var(--primary-color);
     cursor: pointer;
 }
+
 /* footer section starts */
-.footer-container{
+.footer-container {
     height: 70vh;
     background-color: var(--title-color);
     display: flex;
@@ -320,38 +326,47 @@ button:hover {
     justify-content: center;
     align-items: center;
 }
-.footer-logo{
+
+.footer-logo {
     display: flex;
     align-items: center;
     margin-bottom: 50px;
 }
+
 .footer-logo img {
     width: 50px;
 }
-.footer-logo h2{
+
+.footer-logo h2 {
     color: white;
     margin-left: 20px;
 }
-.footer-icons img{
+
+.footer-icons img {
     width: 30px;
 }
+
 .footer-links a,
-.footer-links-2 a{
+.footer-links-2 a {
     text-decoration: none;
     margin: 0px 30px;
 }
-.footer-links a{
+
+.footer-links a {
     color: white;
     font-weight: 600;
 }
-.footer-links-2 a{
+
+.footer-links-2 a {
     font-size: 0.7rem;
     color: rgba(255, 255, 255, 0.60);
 }
-.footer-icons img{
+
+.footer-icons img {
     margin: 50px 15px;
 }
-.footer-description p{
+
+.footer-description p {
     font-size: 0.7rem;
     color: rgba(255, 255, 255, 0.60);
     margin-top: 30px;
@@ -495,12 +510,14 @@ button:hover {
     .feature-img-inner img {
         width: 40%;
     }
+
     /* game section style */
     .game {
         height: auto;
         justify-content: center;
         height: 50vh;
     }
+
     .game-container {
         width: 90%;
         display: grid;
@@ -509,14 +526,88 @@ button:hover {
         margin: auto;
         justify-content: space-between;
     }
-    .game-item img{
+
+    .game-item img {
         width: 20px;
     }
-    .game-item p{
+
+    .game-item p {
         font-size: 0.4rem;
         font-weight: 600;
     }
+
+    /* footer section starts */
+    .footer-container {
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .footer-logo img {
+        width: 50px;
+    }
+
+    .footer-logo h2 {
+        color: white;
+        margin-left: 10px;
+    }
+
+    .footer-icons img {
+        width: 20px;
+    }
+
+    .footer-links a,
+    .footer-links-2 a {
+        text-decoration: none;
+        margin: 0px 0px;
+    }
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .footer-links a {
+        font-size: 0.8rem;
+
+    }
+
+    .footer-icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .footer-icons img {
+        margin: 0px 10px;
+    }
+
+    .footer-links-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 30px;
+        gap: 20px 50px;
+    }
+
+    .footer-links-2 a {
+        font-size: 0.5rem;
+    }
+
+    .footer-description p {
+        font-size: 0.5rem;
+        margin-top: 30px;
+    }
 }
+
+
 
 /* for tablet */
 @media screen and (min-width: 426px) and (max-width: 992px) {
@@ -611,12 +702,14 @@ button:hover {
     .feature-img-inner img {
         width: 40%;
     }
+
     /* game section style */
     .game {
         height: auto;
         justify-content: center;
         height: 50vh;
     }
+
     .game-container {
         width: 90%;
         display: grid;
@@ -625,10 +718,42 @@ button:hover {
         margin: auto;
         justify-content: space-between;
     }
-    .game-item img{
+
+    .game-item img {
         width: 20px;
     }
-    .game-item p{
+
+    .game-item p {
         font-size: 0.8rem;
+    }
+
+    /* footer section starts */
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .footer-links a,
+    .footer-links-2 a {
+        text-decoration: none;
+        margin: 0px 30px;
+    }
+    .footer-links{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px 0px;
+        justify-content: center;
+    }
+
+    .footer-links a {
+        color: white;
+        font-weight: 600;
+    }
+    .footer-links-2{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px 0px;
+        justify-content: center;
     }
 }
