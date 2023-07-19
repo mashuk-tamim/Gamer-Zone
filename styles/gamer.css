@@ -247,6 +247,7 @@ button:hover {
 
 /* for mobile */
 @media screen and (max-width: 426px) {
+    /* navbar section */
     .nav-container {
         display: flex;
         flex-direction: column;
@@ -319,6 +320,7 @@ button:hover {
         font-size: 1rem;
 
     }
+    /* videos section starts */
     .videos-container {
         margin: 10vh 0vw;
         text-align: center;
@@ -343,6 +345,7 @@ button:hover {
 
 /* for tablet */
 @media screen and (min-width: 426px) and (max-width: 992px) {
+    /* navbar section */
     .nav-container {
         display: flex;
         flex-direction: column;
@@ -374,5 +377,13 @@ button:hover {
 
     .banner-img img {
         width: 100%;
+    }
+    /* videos section starts */
+    .img-container {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 20px;
     }
 }
